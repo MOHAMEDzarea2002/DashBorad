@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZareaAdmin</title>
+    <!-- Tailwind css  -->
+    <link rel="stylesheet" href="./src/assets/style/output.css" />
+    <!-- font aweesomes  -->
+    <link rel="stylesheet" href="./src/assets/style/all.min.css" />
+    <!-- stylecss  -->
+    <link rel="stylesheet" href="./src/assets/style/style.css" />
+</head>
+
+<body>
+    <div class="page w-full p-2 overflow-x-hidden bg-slate-100 transition duration-500">
+        <!--###### strat sidebar  -->
+        <div
+            class="sidebar w-60 bg-white shadow-md shadow-slate-600 fixed z-40 transition duration-500 md:-translate-x-96 xl:translate-x-0 col-span-4 rounded-md">
+            <nav class=" ">
+                <div
+                    class="logo bg-gradient-to-r from-stone-900 to-gray-500 font-bold block w-full text-center shadow-sm shadow-slate-400">
+                    zarea
+                </div>
+                <ul class="overflow-hidden">
+                    <p class="text-gray-500 my-4 ml-3">Home</p>
+                    <a href="./index.html" draggable="false"
+                        class="cursor-pointer mb-4 flex items-center justify-start py-3 before:transition-all before:duration-500"><i
+                            class="fa-solid fa-circle-dot ml-4"></i>
+                        <div class="text-bar ml-3">Dashbord</div>
+                    </a>
+                    <p class="text-gray-500 my-4 ml-3">Ui components</p>
+
+                    <a href="./alert.html"
+                        class="cursor-pointer mb-4 flex items-center py-3 before:transition-all before:duration-500"><i
+                            class="fa-solid fa-circle-radiation ml-8 block w-8"></i>
+                        <div class="text-bar">Alert</div>
+                    </a>
+                    <a href="./Button.html" draggable="false"
+                        class="cursor-pointer mb-4 flex items-center py-3 before:transition-all before:duration-500"><i
+                            class="fa-solid fa-circle-dot ml-8 block w-8"></i>
+                        <div class="text-bar">Button</div>
+                    </a>
+                    <a href="./cards.html" draggable="false"
+                        class="cursor-pointer mb-4 flex items-center py-3 before:transition-all before:duration-500"><i
+                            class="fa-solid fa-credit-card ml-8 block w-8"></i>
+                        <div class="text-bar">Cards</div>
+                    </a>
+                    <a href="./tables.thml" draggable="false"
+                        class="cursor-pointer mb-4 flex items-center py-3 before:transition-all before:duration-500"><i
+                            class="fa-solid fa-table-list ml-8 block w-8"></i>
+                        <div class="text-bar">Tables</div>
+                    </a>
+                    <p class="text-gray-500 my-4 ml-3">AUTH</p>
+
+                    <a href="./login.html" draggable="false"
+                        class="cursor-pointer mb-4 flex items-center py-3 before:transition-all before:duration-500"><i
+                            class="fa-solid fa-right-to-bracket ml-8 block w-8"></i>
+                        <div class="text-bar">Login</div>
+                    </a>
+                    <a href="./register.html" draggable="false"
+                        class="cursor-pointer mb-4 flex items-center py-3 before:transition-all before:duration-500"><i
+                            class="fa-solid fa-user-plus ml-8 block w-8"></i>
+                        <div class="text-bar">Register</div>
+                    </a>
+                    <p class="text-gray-500 my-4 ml-3">EXTRA</p>
+                    <a href="./icons.html" draggable="false"
+                        class="cursor-pointer mb-4 flex items-center py-3 before:transition-all before:duration-500"><i
+                            class="fa-solid fa-table-list ml-8 block w-8"></i>
+                        <div class="text-bar">Icons</div>
+                    </a>
+                    <a href="./sample.html" draggable="false"
+                        class="cursor-pointer mb-4 flex items-center py-3 before:transition-all before:duration-500"><i
+                            class="fa-solid fa-face-smile ml-8 block w-8"></i>
+                        <div class="text-bar">Sample Page</div>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+        <!-- End sidebar  -->
+        <!--### start navigation -->
+        <div
+            class="navigation-copy mt-1 m-auto  shadow-sm shadow-gray-400 bg-white max-sm:w-10/12 sm:w-11/12 md:w-10/12  xl:w-8/12  rounded-xl flex justify-between items-center p-2   m-1  rounded-md max-sm:translate-x-6 sm:translate-x-3 md:translate-x-16 lg:translate-x-36  xl:translate-x-96   fixed z-20">
+            <div class="flex m-2">
+                <div class="menu xl:hidden cursor-pointer mr-4" id="menu">
+                    <div><i class="fa-solid fa-bars"></i></div>
+                </div>
+                <div class="bell cursor-pointer">
+                    <i class="fa-classic fa-regular fa-bell fa-fw"></i>
+                </div>
+            </div>
+            <div class="profile  relative cursor-pointer">
+                <img src="./src/assets/images/profile.jpg" class="rounded-full size-10 profile-img" alt=""
+                    draggable="false" />
+                <div class="setting absolute bg-white p-1 w-36  rounded-lg z-50">
+                    <ul class="p-1">
+                        <a href="" class="flex items-center flex-nowrap my-2 relative"><i
+                                class="fa-solid fa-user   w-6 FLEX justify-center items-center "></i>
+                            <div class="title">My profile</div>
+                        </a>
+                        <a href="" class="flex items-center flex-nowrap my-2 relative"><i
+                                class="fa-solid fa-file-invoice   w-6 FLEX justify-center items-center "></i>
+                            <div class="title">My Account</div>
+                        </a>
+                        <a href="" class="flex items-center flex-nowrap my-2 relative"><i
+                                class="fa-solid fa-list-check   w-6 FLEX justify-center items-center "></i>
+                            <div class="title">My Task</div>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <!-- End navigation -->
+        <!-- start wrapper -->
+        <div
+            class="wrapper mt-20 m-1 md:w-full lg:w-10/12 xl:w-8/12 rounded-md md:translate-x-0 lg:translate-x-36 xl:translate-x-96 transition-transform duration-700">
+
+            <!--#### Start Carde -->
+
+            <div class="flex max-sm:flex-col sm:flex-col my-6  xl:flex-row">
+                <!-- start With Props  -->
+                <div class=" bg-white overflow-hidden lg:w-full  mr-3 rounded-lg shadow-sm">
+                    <div class="p-4 border-solid border-b-2  border-gray-300  font-semibold text-lg">
+                        <h3>With Props</h3>
+                    </div>
+                    <div class=" ml-9 mt-9  overflow-hidden flex-wrap max-sm:flex-col">
+                        <h3 class=" font-medium text-gray-600">
+                            This is a title
+                            <p class="text-xs text-gray-500">This is a subtitle</p>
+                        </h3>
+                        <h3 class=" my-7 ">
+                            <p class="text-sm text-gray-500">This is content</p>
+                        </h3>
+                    </div>
+                </div>
+                <!-- End  With Props  -->
+
+                <!-- strat  With Slots  -->
+                <div class=" bg-white overflow-hidden md:w-full mr-3 rounded-lg shadow-sm  mt-5 xl:m-0">
+                    <div class="p-4 border-solid border-b-2  border-gray-300  font-semibold text-lg">
+                        <h3>With Props</h3>
+                    </div>
+                    <div class=" ml-9 mt-9  overflow-hidden flex-wrap max-sm:flex-col">
+                        <h3 class=" font-medium text-gray-600">
+                            This is a title
+                            <p class="text-xs text-gray-500">This is a subtitle</p>
+                        </h3>
+                        <h3 class=" my-7 ">
+                            <p class="text-sm text-gray-500">This is content</p>
+                        </h3>
+                    </div>
+                </div>
+                <!-- End  With Slots  -->
+
+            </div>
+            <!-- strat content or carde Media  -->
+            <div class="flex max-sm:flex-col sm:flex-col my-6  xl:flex-row">
+                <!-- strat  Content   -->
+                <div class=" bg-white overflow-hidden lg:w-full  mr-3 rounded-lg shadow-sm  mt-5 xl:m-0">
+                    <div class="p-4 border-solid border-b-2  border-gray-300  font-semibold text-lg">
+                        <h3>With Props</h3>
+                    </div>
+                    <div class="  overflow-hidden flex-wrap max-sm:flex-col p-4">
+                        <div class="  relative ">
+                            <div class=" relative overflow-hidden h-36">
+                                <img class="rounded-lg h-full w-full   object-cover"
+                                    src="./src/assets/images/img-carde2.jpg" alt="img-messages">
+                                    <div class=" p-3 w-full   absolute top-0 flex justify-between items-center">
+                                        <div class="flex items-center justify-center" >
+                                            <i class="fa-solid fa-bars cursor-pointer text-white  "></i>
+                                            <p class="ml-3 text-white">Message</p>
+                                        </div>
+                                        <i class="fa-solid fa-ellipsis-vertical text-white"></i>
+                                    </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="p-4">
+
+                            <div class="">
+                                <h3 class="text-sm ">Number 10</h3>
+                                <div class="ml-3 mt-8">
+                                    <p class="text-gray-500 text-xs">Whitehaven Beach</p>
+                                    <p class="text-gray-500 text-xs">Whitsunday Island, Whitsunday Islands</p>
+                                </div>
+                            </div>
+
+
+                            <div class="botton flex items-center mt-6 ml-3">
+                                <button id="Share"
+                                    class="hover:bg-slate-100 mr-4 px-1 rounded-sm transition ease-in-out duration-400">Share</button>
+                                <button id="Explore"
+                                    class="hover:bg-slate-100 px-1 rounded-sm transition ease-in-out duration-400 ">Explore</button>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class=" bg-white overflow-hidden lg:w-full  mr-3 rounded-lg shadow-sm  mt-5 xl:m-0">
+                    <div class="p-4 border-solid border-b-2  border-gray-300  font-semibold text-lg">
+                        <h3>With Props</h3>
+                    </div>
+                    <div class="  overflow-hidden flex-wrap max-sm:flex-col p-4">
+                        <div class="  relative ">
+                            <div class=" overflow-hidden h-36">
+                                <img class="rounded-lg h-full w-full   object-cover"
+                                    src="./src/assets/images/img-carde2.jpg" alt="img-messages">
+                            </div>
+                            <div class="   absolute bottom-28 left-1 flex justify-between items-center">
+                                <div class="flex items-center" >
+                                    <i class="fa-solid fa-bars cursor-pointer text-white"></i>
+                                    <p class="ml-3 text-white">Message</p>
+                                </div>
+                                <i class="fa-solid fa-ellipsis-vertical text-black"></i>
+                            </div>
+                            
+                        </div>
+
+                        <div class="p-4">
+
+                            <div class="">
+                                <h3 class="text-sm ">Number 10</h3>
+                                <div class="ml-3 mt-8">
+                                    <p class="text-gray-500 text-xs">Whitehaven Beach</p>
+                                    <p class="text-gray-500 text-xs">Whitsunday Island, Whitsunday Islands</p>
+                                </div>
+                            </div>
+
+
+                            <div class="botton flex items-center mt-6 ml-3">
+                                <button id="Share"
+                                    class="hover:bg-slate-100 mr-4 px-1 rounded-sm transition ease-in-out duration-400">Share</button>
+                                <button id="Explore"
+                                    class="hover:bg-slate-100 px-1 rounded-sm transition ease-in-out duration-400 ">Explore</button>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div> -->
+                <!-- End  Content  -->
+                <!-- start cardMadia  -->
+                <div class=" bg-white overflow-hidden lg:w-full  mr-3 rounded-lg shadow-sm xl:ml-2  mt-5 xl:m-0">
+                    <div class="p-4 border-solid border-b-2  border-gray-300  font-semibold text-lg">
+                        <h3>Carde Media</h3>
+                    </div>
+                    <div class="  overflow-hidden flex-wrap max-sm:flex-col p-4">
+                        <div class="  relative ">
+                            <div class=" overflow-hidden h-36">
+                                <img class="rounded-lg h-full w-full   object-cover"
+                                    src="./src/assets/images/img-carde.jpg" alt="img-messages">
+                            </div>
+                            <h3 class=" absolute bottom-1 left-4">Top 10 Australian Beaches</h3>
+                        </div>
+                        <!-- start data  -->
+                        <div class="p-4">
+
+                            <div class="">
+                                <h3 class="text-sm ">Number 10</h3>
+                                <div class="ml-3 mt-8">
+                                    <p class="text-gray-500 text-xs">Whitehaven Beach</p>
+                                    <p class="text-gray-500 text-xs">Whitsunday Island, Whitsunday Islands</p>
+                                </div>
+                            </div>
+
+
+                            <!-- start bottom  -->
+                            <div class="botton flex items-center mt-6 ml-3">
+                                <button id="Share"
+                                    class="hover:bg-slate-100 mr-4 px-1 rounded-sm transition ease-in-out duration-400">Share</button>
+                                <button id="Explore"
+                                    class="hover:bg-slate-100 px-1 rounded-sm transition ease-in-out duration-400 ">Explore</button>
+                            </div>
+                            <!-- end Bottom  -->
+
+                        </div>
+                        <!-- End data  -->
+                    </div>
+                </div>
+                <!-- End  cardMadia  -->
+
+
+
+            </div>
+            <!-- End content And carde Media  -->
+            <!-- start text Color And Icons size  -->
+            <div class="flex  max-md:flex-col  mb-3 mt-6 ">
+                <div class="colors bg-white overflow-hidden md:w-1/2 sm:mr-3  rounded-lg shadow-sm">
+                    <div class="p-4 border-solid border-b-2  border-gray-300  font-semibold text-lg">
+                        <h3>Colors</h3>
+                    </div>
+                    <div class="flex justify-between items-center p-3 overflow-hidden flex-wrap max-sm:flex-col">
+                        <button class=" py-1 px-3 rounded-md transition-all duration-300 active:bg-blue-100 my-1"><span
+                                class="text-blue-500">Primary</span></button>
+                        <button class=" py-1 px-3 rounded-md transition-all duration-300 active:bg-gray-100 my-1"><span
+                                class="text-gray-500 font-semibold">Secondary</span></button>
+                        <button class=" py-1 px-3 rounded-md transition-all duration-300 active:bg-green-100 my-1"><span
+                                class=" text-green-400 font-semibold">Success</span></button>
+                        <button>
+                            <button
+                                class="  py-1 px-3 rounded-md transition-all duration-300 active:bg-red-100  my-1"><span
+                                    class="text-red-400 font-semibold">Error</span></button>
+
+                            <button
+                                class=" py-1 px-3 rounded-md transition-all duration-300 active:bg-yellow-50 my-1"><span
+                                    class="text-yellow-600 font-semibold">Warning</span></button>
+                    </div>
+                </div>
+                <div class="colors bg-white overflow-hidden md:w-1/2 max-md:mt-5   rounded-lg shadow-sm">
+                    <div class="p-4 border-solid border-b-2  border-gray-300  font-semibold text-lg">
+                        <h3>Colors</h3>
+                    </div>
+                    <div class="flex justify-center items-center p-3 overflow-hidden flex-wrap max-sm:flex-col">
+                        <button
+                            class="bg-blue-400 p-2 m-1 rounded-full transition-all duration-300 active:bg-blue-300 my-1"><span
+                                class="text-1xl"><i class="fa-classic fa-regular fa-bell fa-fw"></i></span></button>
+                        <button
+                            class="bg-gray-600 p-2 m-1 rounded-full transition-all duration-300 active:bg-gray-500 my-1"><span
+                                class="text-2xl"><i class="fa-classic fa-regular fa-bell fa-fw"></i></span></button>
+                        <button
+                            class="bg-green-400 p-2 m-1 rounded-full transition-all duration-300 active:bg-green-200 my-1"><span
+                                class=" text-3xl"><i class="fa-classic fa-regular fa-bell fa-fw"></i></span></button>
+                        <button>
+                            <button
+                                class="bg-red-300  p-2 m-1 rounded-full transition-all duration-300 active:bg-red-100  my-1"><span
+                                    class="text-4xl"><i class="fa-classic fa-regular fa-bell fa-fw"></i></span></button>
+
+                            <button
+                                class="bg-yellow-500  p-4 rounded-full transition-all duration-300 active:bg-yellow-300 my-1"><span
+                                    class=" text-4xl"><i
+                                        class="fa-classic fa-regular fa-bell fa-fw"></i></span></button>
+                    </div>
+                </div>
+            </div>
+            <!-- End text Color And Icons size  -->
+            <!-- End carde -->
+
+        </div>
+        <!-- End wrapper -->
+    </div>
+    <script src="./src/assets/typeScripte/alert.js"></script>
+    <script src="./src/assets/typeScripte/NaveSidebar.js"></script>
+
+</body>
+
+</html>

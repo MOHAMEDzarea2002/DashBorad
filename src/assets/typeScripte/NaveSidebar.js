@@ -1,0 +1,42 @@
+var menu = document.getElementById("menu"); //get ele icon menu
+var sidebar = document.querySelector(".sidebar"); //get ele sidebar
+// show sidebar 
+menu.addEventListener("click", function (event) {
+    event.stopPropagation();
+    sidebar.classList.add("active");
+});
+// heding sidebar
+document.body.addEventListener("click", function (event) {
+    var target = event.target;
+    if (!sidebar.contains(target) && target !== menu) {
+        sidebar.classList.remove("active");
+    }
+});
+// get A links sidebar 
+var linkSidebar = document.querySelectorAll(".sidebar ul a"); //link in sidebar
+function BeforeSidebar() {
+    linkSidebar.forEach(function (ele) {
+        ele.classList.remove("active");
+    });
+    this.classList.add("active");
+}
+linkSidebar.forEach(function (ele) {
+    ele.addEventListener("mousemove", BeforeSidebar);
+});
+//get ele profile
+var profile = document.querySelector(".profile-img");
+//get ele setting profile
+var setting = document.querySelector(".setting");
+// show setting profile 
+profile.addEventListener("click", showProfile);
+function showProfile(event) {
+    event.stopPropagation();
+    setting.classList.toggle("active");
+}
+// heding seting profile
+document.body.addEventListener("click", function (event) {
+    var target = event.target;
+    if (!setting.contains(target) && target !== profile) {
+        setting.classList.remove("active");
+    }
+});

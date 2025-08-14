@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZareaAdmin</title>
+  <!-- Tailwind css  -->
+  <link rel="stylesheet" href="./src/assets/style/output.css" />
+  <!-- font aweesomes  -->
+  <link rel="stylesheet" href="./src/assets/style/all.min.css" />
+  <!-- stylecss  -->
+  <link rel="stylesheet" href="./src/assets/style/style.css" />
+</head>
+
+<body>
+    <div class="page w-full p-2 overflow-x-hidden bg-slate-100 transition duration-500">
+        <!--###### strat sidebar  -->
+        <div
+            class="sidebar w-60 bg-white shadow-md shadow-slate-600 fixed z-40 transition duration-500 md:-translate-x-96 xl:translate-x-0 col-span-4 rounded-md">
+            <nav class=" ">
+                <div
+                    class="logo bg-gradient-to-r from-stone-900 to-gray-500 font-bold block w-full text-center shadow-sm shadow-slate-400">
+                    zarea
+                </div>
+                <ul class="overflow-hidden">
+                    <p class="text-gray-500 my-4 ml-3">Home</p>
+                    <a href="./index.html" draggable="false"
+                        class="cursor-pointer mb-4 flex items-center justify-start py-3 before:transition-all before:duration-500"><i
+                            class="fa-solid fa-circle-dot ml-4"></i>
+                        <div class="text-bar ml-3">Dashbord</div>
+                    </a>
+                    <p class="text-gray-500 my-4 ml-3">Ui components</p>
+
+                    <a href="./alert.html"
+                        class="cursor-pointer mb-4 flex items-center py-3 before:transition-all before:duration-500"><i
+                            class="fa-solid fa-circle-radiation ml-8 block w-8"></i>
+                        <div class="text-bar">Alert</div>
+                    </a>
+                    <a href="./Button.html" draggable="false"
+                        class="cursor-pointer mb-4 flex items-center py-3 before:transition-all before:duration-500"><i
+                            class="fa-solid fa-circle-dot ml-8 block w-8"></i>
+                        <div class="text-bar">Button</div>
+                    </a>
+                    <a href="./cards.html" draggable="false"
+                        class="cursor-pointer mb-4 flex items-center py-3 before:transition-all before:duration-500"><i
+                            class="fa-solid fa-credit-card ml-8 block w-8"></i>
+                        <div class="text-bar">Cards</div>
+                    </a>
+                    <a href="./tables.html" draggable="false"
+                        class="cursor-pointer mb-4 flex items-center py-3 before:transition-all before:duration-500"><i
+                            class="fa-solid fa-table-list ml-8 block w-8"></i>
+                        <div class="text-bar">Tables</div>
+                    </a>
+                    <p class="text-gray-500 my-4 ml-3">AUTH</p>
+
+                    <a href="./login.html" draggable="false"
+                        class="cursor-pointer mb-4 flex items-center py-3 before:transition-all before:duration-500"><i
+                            class="fa-solid fa-right-to-bracket ml-8 block w-8"></i>
+                        <div class="text-bar">Login</div>
+                    </a>
+                    <a href="./register.html" draggable="false"
+                        class="cursor-pointer mb-4 flex items-center py-3 before:transition-all before:duration-500"><i
+                            class="fa-solid fa-user-plus ml-8 block w-8"></i>
+                        <div class="text-bar">Register</div>
+                    </a>
+                    <p class="text-gray-500 my-4 ml-3">EXTRA</p>
+                    <a href="icons.html" draggable="false"
+                        class="cursor-pointer mb-4 flex items-center py-3 before:transition-all before:duration-500"><i
+                            class="fa-solid fa-table-list ml-8 block w-8"></i>
+                        <div class="text-bar">Icons</div>
+                    </a>
+                    <a href="./saple.html" draggable="false"
+                        class="cursor-pointer mb-4 flex items-center py-3 before:transition-all before:duration-500"><i
+                            class="fa-solid fa-face-smile ml-8 block w-8"></i>
+                        <div class="text-bar">Sample Page</div>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+        <!-- End sidebar  -->
+             <!--### start navigation -->
+    <div
+    class="navigation-copy mt-1 m-auto  shadow-sm shadow-gray-400 bg-white max-sm:w-10/12 sm:w-11/12 md:w-10/12  xl:w-8/12  rounded-xl flex justify-between items-center p-2   m-1  rounded-md max-sm:translate-x-6 sm:translate-x-3 md:translate-x-16 lg:translate-x-36  xl:translate-x-96   fixed z-20">
+    <div class="flex m-2">
+      <div class="menu xl:hidden cursor-pointer mr-4" id="menu">
+        <div><i class="fa-solid fa-bars"></i></div>
+      </div>
+      <div class="bell cursor-pointer">
+        <i class="fa-classic fa-regular fa-bell fa-fw"></i>
+      </div>
+    </div>
+    <div class="profile  relative cursor-pointer">
+      <img src="./src/assets/images/profile.jpg" class="rounded-full size-10 profile-img" alt="" draggable="false" />
+      <div class="setting absolute bg-white p-1 w-36  rounded-lg z-50">
+        <ul class="p-1">
+          <a href="" class="flex items-center flex-nowrap my-2 relative"><i
+              class="fa-solid fa-user   w-6 FLEX justify-center items-center "></i>
+            <div class="title">My profile</div>
+          </a>
+          <a href="" class="flex items-center flex-nowrap my-2 relative"><i
+              class="fa-solid fa-file-invoice   w-6 FLEX justify-center items-center "></i>
+            <div class="title">My Account</div>
+          </a>
+          <a href="" class="flex items-center flex-nowrap my-2 relative"><i
+              class="fa-solid fa-list-check   w-6 FLEX justify-center items-center "></i>
+            <div class="title">My Task</div>
+          </a>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+  <!-- End navigation -->
+        <!-- start wrapper -->
+        <div
+            class="wrapper mt-20 m-1 md:w-full lg:w-10/12 xl:w-8/12 rounded-md md:translate-x-0 lg:translate-x-36 xl:translate-x-96 transition-transform duration-700">
+
+            <!--#### Start Button -->
+            <!-- start Defalur -->
+            <div class="Default bg-white my-4 rounded-lg shadow-sm">
+                <div class="p-4 border-solid border-b-2  border-gray-300  font-semibold text-lg">
+                    <h3>Icons</h3>
+                </div>
+                <div class="flex justify-between items-center p-3 overflow-hidden flex-wrap max-sm:flex-col">
+<iframe src="https://tabler-icons.io/" title="Inline Frame Example" frameborder="0" width="100%" height="650"></iframe>
+
+                </div>
+            </div>
+            <!-- End Defalur -->
+
+            <!-- End Button -->
+
+        </div>
+        <!-- End wrapper -->
+    </div>
+<script src="./src/assets/typeScripte/NaveSidebar.js"></script>
+
+</body>
+
+</html>
